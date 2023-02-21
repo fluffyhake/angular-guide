@@ -1,0 +1,27 @@
+<p>lession3 works!</p>
+
+<button class="btn btn-primary" (click)="toggle()">Display Details</button>
+<!-- <button class="btn btn-primary" (click)="viewstatus = !viewstatus">
+  Display Details 2
+</button> -->
+<button class="btn btn-primary" (click)="betterToggle()">
+  Display Details 2
+</button>
+
+<button class="btn btn-primary" (click)="bestToggle()">
+  Display Details 3
+</button>
+
+<div>
+  <p *ngIf="viewstatus">Secret Password = Tuna</p>
+</div>
+
+<p
+  *ngFor="let entry of togglelog; let i = index"
+  [ngStyle]="{ backgroundColor: getColor(entry) }"
+  [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{ white: entry >= 5 }"
+  [ngClass]="{ white: i >= 4 }"
+>
+  {{ entry }}
+</p>
