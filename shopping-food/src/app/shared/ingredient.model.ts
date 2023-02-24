@@ -5,3 +5,4 @@ export class Ingredient {
 
 // 👀👀👀 https://dev.to/satansdeer/typescript-constructor-shorthand-3ibd
 // Remember this håkan
+// "parameter properties"
